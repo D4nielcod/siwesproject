@@ -49,16 +49,13 @@ footer{background-color:#A9A9A9; height:43px; width:100%;}
   .container{height:65vh; margin-top:8%; width:95%;}
   .container a.forgot{padding-top:10px; right:11vw;}
   .container a.admin{right:12.5vw;}
+
+  /* Footer */
+  footer{height:15vh; margin-top:5%;}
 }
 
 @media screen and (max-width:500px) {
   .container{width:98%}
-  .container label{font-size:90%; margin-left:-38%}
-  .container a.forgot{color:red; font-size:90%; padding-top:11px;}
-}
-
-
-
-  /* Footer */
-  footer{height:15vh; margin-top:5%;}
+  .container label{font-size:100%; margin-left:-38%}
+  .container a.forgot{color:red; font-size:90%;}
 }
