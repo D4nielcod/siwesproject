@@ -49,6 +49,15 @@ footer{background-color:#A9A9A9; height:43px; width:100%;}
   .container{height:65vh; margin-top:8%; width:95%;}
   .container a.forgot{padding-top:10px; right:11vw;}
   .container a.admin{right:12.5vw;}
+}
+
+@media screen and (max-width:500px) {
+  .container{width:98%}
+  .container label{font-size:90%;}
+  .container a.forgot{font-size:90%;}
+}
+
+
 
   /* Footer */
   footer{height:15vh; margin-top:5%;}
