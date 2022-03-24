@@ -49,7 +49,6 @@ footer{background-color:#A9A9A9; height:43px; width:100%;}
   .container{height:65vh; margin-top:8%; width:95%;}
   .container a.forgot{font-size:80%; padding-top:11px; right:11vw;}
   .container a.admin{font-size:80%; right:12.5vw;}
-  .container label{font-size:100%; border: 1px solid;}
 
   /* Footer */
   footer{height:15vh; margin-top:5%;}
