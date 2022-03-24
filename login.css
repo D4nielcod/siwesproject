@@ -47,8 +47,8 @@ footer{background-color:#A9A9A9; height:43px; width:100%;}
 @media screen and (max-width:700px){
   /* Container */
   .container{height:65vh; margin-top:8%; width:95%;}
-  .container a.forgot{padding-top:10px; right:11vw;}
-  .container a.admin{right:12.5vw;}
+  .container a.forgot{font-size:90%; padding-top:11px; right:11vw;}
+  .container a.admin{font-size:90%;right:12.5vw;}
 
   /* Footer */
   footer{height:15vh; margin-top:5%;}
@@ -56,6 +56,4 @@ footer{background-color:#A9A9A9; height:43px; width:100%;}
 
 @media screen and (max-width:500px) {
   .container{width:98%}
-  .container label{font-size:100%; margin-left:-38%}
-  .container a.forgot{font-size:90%;}
 }
