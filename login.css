@@ -47,7 +47,7 @@ footer{background-color:#A9A9A9; height:43px; width:100%;}
 @media screen and (max-width:700px){
   /* Container */
   .container{height:65vh; margin-top:8%; width:95%;}
-  .container a.forgot{font-size:90%; padding-top:11px; right:11vw;}
+  .container a.forgot{font-size:100%; padding-top:11px; right:11vw;}
   .container a.admin{font-size:90%;right:12.5vw;}
 
   /* Footer */
