@@ -1,0 +1,241 @@
+/* Header */
+.navBar {
+  background-color: #d4d4d4;
+  padding: 15px 70px;
+  position: inherit;
+}
+
+.navBar .header-word h3 {
+  color: #696969;
+}
+
+.navBar ul li .header-anchor {
+  color: #696969;
+}
+
+@media screen and (max-width: 1300px) {
+  .navBar {
+    padding: 20px 30px;
+  }
+
+  /* Responsive Header */
+  .responsive {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    height: 800px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .responsive .header-word {
+    display: block;
+    margin: 0;
+    padding: 20px 30px;
+  }
+
+  .responsive .header-word h3 {
+    color: #696969;
+    display: inline;
+  }
+
+  .responsive header ul,
+  .responsive header li {
+    display: inline;
+  }
+
+  .responsive .header-word .icon {
+    color: #fff;
+    display: inline;
+    float: right;
+    font-size: 130%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .responsive .header-word .icon:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+
+  .responsive .ul-mobile li a.header-anchor {
+    color: #696969;
+    cursor: pointer;
+    display: block;
+    float: none;
+    font-size: 100%;
+    margin-bottom: 3%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 100%;
+  }
+  .responsive .ul-mobile li a.header-anchor:hover {
+    color: #000;
+    transition: 0.3s;
+  }
+
+  .responsive .ul-mobile li a.home {
+    padding-top: 10px;
+  }
+}
+/* End of Header */
+
+/* Container */
+.container {
+  border: 1px solid #a9a9a9;
+  border-radius: 10px;
+  margin: auto;
+  padding: 55px 70px;
+  width: 40%;
+}
+
+.container h4 {
+  color: #224957;
+  font-size: 220%;
+  text-align: center;
+  width: 100%;
+}
+
+.container p {
+  color: #224957;
+  font-size: 90%;
+  margin-top: 1%;
+  text-align: center;
+  width: 100%;
+}
+
+.container input.username,
+.container input.password {
+  background-color: #224957;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px 15px;
+  width: 100%;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.container input.checkbox {
+  color: #224957;
+  display: inline;
+}
+
+.container p.remember {
+  display: inline;
+}
+
+.container a.forgot {
+  color: #224957;
+  float: right;
+  text-decoration: none;
+}
+
+.container form button {
+  background-color: #20df7f;
+  border: none;
+  border-radius: 10px;
+  color: #224957;
+  cursor: pointer;
+  display: block;
+  font-size: 110%;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 15px;
+  width: 100%;
+}
+
+.container a.admin {
+  color: #ff0000;
+  float: right;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .container input.username,
+  .container input.password {
+    padding: 15px;
+  }
+
+  .container a.forgot {
+    display: inline;
+  }
+
+  .container form button {
+    font-size: 100%;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .container {
+    padding: 60px 50px;
+    width: 70%;
+  }
+
+  .container h4 {
+    font-size: 240%;
+  }
+
+  .container p {
+    font-size: 100%;
+  }
+
+  .container a.forgot {
+    font-size: 100%;
+  }
+
+  .container a.admin {
+    font-size: 100%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .container {
+    padding: 50px 40px;
+    width: 80%;
+  }
+
+  .container h4 {
+    font-size: 240%;
+  }
+
+  .container p {
+    font-size: 90%;
+  }
+
+  .container a.forgot {
+    font-size: 90%;
+  }
+
+  .container a.admin {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 40px 30px;
+    width: 90%;
+  }
+
+  .container h4 {
+    font-size: 180%;
+  }
+
+  .container p {
+    font-size: 90%;
+  }
+
+  .container a.forgot {
+    font-size: 90%;
+  }
+
+  .container a.admin {
+    font-size: 90%;
+  }
+}
+/* End of Container */

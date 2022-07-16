@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>IDP ~ Food</title>
+
+    <!-- Internal CSS -->
+    <style>
+      /* Header */
+      .navBar {
+        background-color: #d4d4d4;
+        padding: 15px 70px;
+        position: inherit;
+      }
+
+      .navBar .header-word h3 {
+        color: #696969;
+      }
+
+      .navBar ul li .header-anchor {
+        color: #696969;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .navBar {
+          padding: 20px 30px;
+        }
+
+        /* Responsive Header */
+        .responsive {
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+          height: 800px;
+          padding: 0px;
+          position: absolute;
+          top: 0;
+          transition: 0.3s;
+          width: 100%;
+          z-index: 10;
+        }
+
+        .responsive .header-word {
+          display: block;
+          margin: 0;
+          padding: 20px 30px;
+        }
+
+        .responsive .header-word h3 {
+          color: #696969;
+          display: inline;
+        }
+
+        .responsive header ul,
+        .responsive header li {
+          display: inline;
+        }
+
+        .responsive .header-word .icon {
+          color: #fff;
+          display: inline;
+          float: right;
+          font-size: 130%;
+          text-align: center;
+          transition: 0.3s;
+        }
+        .responsive .header-word .icon:hover {
+          opacity: 0.9;
+          transition: 0.3s;
+        }
+
+        .responsive .ul-mobile li a.header-anchor {
+          color: #696969;
+          cursor: pointer;
+          display: block;
+          float: none;
+          font-size: 100%;
+          margin-bottom: 3%;
+          padding: 20px;
+          text-align: center;
+          text-decoration: none;
+          transition: 0.3s;
+          width: 100%;
+        }
+        .responsive .ul-mobile li a.header-anchor:hover {
+          color: #000;
+          transition: 0.3s;
+        }
+
+        .responsive .ul-mobile li a.home {
+          padding-top: 10px;
+        }
+      }
+      /* End of Header */
+
+      /* Body One */
+      .body-one {
+        padding: 50px 30px;
+        padding-bottom: 90px;
+      }
+
+      .body-one h1 {
+        margin: 0;
+        margin-left: 2%;
+      }
+
+      .body-one table {
+        border-spacing: 20px 40px;
+        width: 100%;
+      }
+
+      .body-one table tr td {
+        border-radius: 10px;
+        line-height: 2;
+        padding: 0px;
+        padding-bottom: 40px;
+        text-align: center;
+        width: 20%;
+      }
+
+      .body-one table img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 250px;
+        width: 100%;
+      }
+
+      .body-one table input {
+        border: 1px solid #696969;
+        border-radius: 15px;
+        padding: 5px;
+        width: 20%;
+      }
+
+      .body-one button {
+        background-color: inherit;
+        border: 1px solid #696969;
+        border-radius: 30px;
+        cursor: pointer;
+        float: right;
+        font-size: 105%;
+        margin-right: 2%;
+        padding: 15px 40px;
+      }
+
+      .body-one .body-one-mobile {
+        display: none;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .body-one .form-desktop {
+          display: none;
+        }
+
+        .body-one .body-one-mobile {
+          display: block;
+        }
+
+        .body-one .body-one-mobile .food-slab {
+          border: 1px solid #696969;
+          border-radius: 10px;
+          line-height: 2;
+          padding-bottom: 30px;
+          text-align: center;
+        }
+
+        .body-one .body-one-mobile .food-slab img {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          height: 250px;
+          width: 100%;
+        }
+
+        .body-one .body-one-mobile .food-slab input {
+          background-color: inherit;
+          border: 1px solid #696969;
+          border-radius: 10px;
+          padding: 3px;
+          width: 30%;
+        }
+
+        .body-one .body-one-mobile .food-slab button {
+          background-color: inherit;
+          border-radius: 30px;
+          border: 1px solid #696969;
+          cursor: pointer;
+          float: right;
+          font-size: 100%;
+          margin-right: 2%;
+          padding: 15px;
+        }
+      }
+      @media screen and (min-width: 800px) and (max-width: 1300px) {
+        .body-one .body-one-mobile {
+          padding: 0px 150px;
+        }
+
+        .body-one .body-one-mobile .food-slab img {
+          height: 450px;
+        }
+      }
+      @media screen and (min-width: 700px) and (max-width: 800px) {
+        .body-one .body-one-mobile {
+          padding: 0px 100px;
+        }
+
+        .body-one .body-one-mobile .food-slab img {
+          height: 300px;
+        }
+      }
+      @media screen and (min-width: 400px) and (max-width: 700px) {
+        .body-one .body-one-mobile {
+          padding: 0px 10px;
+        }
+
+        .body-one .body-one-mobile .food-slab img {
+          height: 300px;
+        }
+      }
+      /* End of Body One */
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navBar" id="myNavBar">
+      <!-- Organization Name and Bar Slashes -->
+      <div class="header-word">
+        <!-- Organization Name/Logo -->
+        <h3>IDPS</h3>
+        <!-- End of Organization Name/Logo -->
+
+        <!-- Bar Slashes -->
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+        <!-- End of Bar Slashes -->
+      </div>
+      <!-- End of Organization Name and Bar Slahes -->
+
+      <!-- Navigation anchor tag Desktop -->
+      <ul class="ul-desktop">
+        <li><a class="header-anchor" href="./sign_up.html">Sign Up</a></li>
+        <li><a class="header-anchor" href="./log_in.html">Log In</a></li>
+        <li><a class="header-anchor" href="./about.html">About</a></li>
+        <li><a class="header-anchor" href="./index.html">Home</a></li>
+      </ul>
+      <!-- End of Navigation anchor tag Desktop -->
+
+      <!-- Navigation anchor tag Mobile -->
+      <ul class="ul-mobile">
+        <li><a class="header-anchor home" href="./index.html">Home</a></li>
+        <li><a class="header-anchor" href="./about.html">About</a></li>
+        <li><a class="header-anchor" href="./log_in.html">Log In</a></li>
+        <li><a class="header-anchor" href="./sign_up.html">Sign Up</a></li>
+      </ul>
+      <!-- End of Navigation anchor tag Mobile -->
+    </header>
+    <!-- End of Header -->
+
+    <!-- Body One -->
+    <div class="body-one">
+      <!-- Body One Desktop View -->
+      <form class="form-desktop" action="">
+        <h1>Make Your Order:</h1>
+        <table>
+          <!-- Row One -->
+          <tr>
+            <!-- Rice Div -->
+            <td>
+              <img src="./images/01rice.jpg" alt="rice image" />
+              <h2>Rice</h2>
+              <label for="rice-amount">Amount (In Bags):</label>
+              <input type="number" name="" id="rice-amount" />
+            </td>
+
+            <!-- Beans DIv -->
+            <td>
+              <img src="./images/02beans.jpg" alt="beans image" />
+              <h2>Beans</h2>
+              <label for="beans-amount">Amount (In Bags):</label>
+              <input type="number" name="" id="beans-amount" />
+            </td>
+
+            <!-- Garri Div -->
+            <td>
+              <img src="./images/03garri.jpg" alt="garri image" />
+              <h2>Garri</h2>
+              <label for="garri-amount">Amount (In Bags):</label>
+              <input type="number" name="" id="garri-amount" />
+            </td>
+
+            <!-- Yam Div -->
+            <td>
+              <img src="./images/04yam.jpg" alt="yam image" />
+              <h2>Yam</h2>
+              <label for="yam-amount">Amount (In Tubers):</label>
+              <input type="number" name="" id="yam-amount" />
+            </td>
+          </tr>
+
+          <!-- Row two -->
+          <tr>
+            <!-- Potato Div -->
+            <td>
+              <img src="./images/05potato.jpg" alt="potato image" />
+              <h2>Potato</h2>
+              <label for="potato-amount">Amount (In Bags):</label>
+              <input type="number" name="" id="potato-amount" />
+            </td>
+
+            <!-- Fish DIv -->
+            <td>
+              <img src="./images/06fish.jpg" alt="fish image" />
+              <h2>Fish</h2>
+              <label for="fish-amount">Amount (In Number):</label>
+              <input type="number" name="" id="fish-amount" />
+            </td>
+
+            <!-- Meat Div -->
+            <td>
+              <img src="./images/07meat.jpg" alt="meat image" />
+              <h2>Meat</h2>
+              <label for="meat-amount">Amount (In Pieces):</label>
+              <input type="number" name="" id="meat-amount" />
+            </td>
+
+            <!-- Onion Div -->
+            <td>
+              <img src="./images/08onion.jpg" alt="onion image" />
+              <h2>Onion</h2>
+              <label for="onion-amount">Amount (In Bags):</label>
+              <input type="number" name="" id="onion-amount" />
+            </td>
+          </tr>
+
+          <!-- Row Three -->
+          <tr>
+            <!-- Groundnut Oil Div -->
+            <td>
+              <img src="./images/09groundnut_oil.jpg" alt="grdnut oil image" />
+              <h2>Groundnut Oil</h2>
+              <label for="grdnut-amount">Amount (In Bottles):</label>
+              <input type="number" name="" id="grdnut-amount" />
+            </td>
+
+            <!-- Palm Oil Div -->
+            <td>
+              <img src="./images/10palm_oil.jpeg" alt="palm oil image" />
+              <h2>Palm Oil</h2>
+              <label for="palm-amount">Amount (In Bottles):</label>
+              <input type="number" name="" id="palm-amount" />
+            </td>
+
+            <!-- Tomato Div -->
+            <td>
+              <img src="./images/11tomato.png" alt="tomato image" />
+              <h2>Tomato</h2>
+              <label for="tomato-amount">Amount (In Bags):</label>
+              <input type="number" name="" id="tomato-amount" />
+            </td>
+
+            <!-- Pepper Div -->
+            <td>
+              <img src="./images/12pepper.jpg" alt="pepper image" />
+              <h2>Pepper</h2>
+              <label for="pepper-amount">Amount (In Bags):</label>
+              <input type="number" name="" id="pepper-amount" />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Body One Mobile View -->
+      <br />
+      <div class="body-one-mobile">
+        <form class="form-mobile" action="">
+          <h1>Make Your Order:</h1>
+          <br />
+          <!-- Rice Div -->
+          <div class="food-slab">
+            <img src="./images/01rice.jpg" alt="rice image" />
+            <h2>Rice</h2>
+            <label for="rice-mobile-amount">Amount (In Bags):</label>
+            <input type="number" name="" id="rice-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Beans Div -->
+          <div class="food-slab">
+            <img src="./images/02beans.jpg" alt="beans image" />
+            <h2>Beans</h2>
+            <label for="beans-mobile-amount">Amount (In Bags):</label>
+            <input type="number" name="" id="beans-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Garri Div -->
+          <div class="food-slab">
+            <img src="./images/03garri.jpg" alt="garri image" />
+            <h2>Garri</h2>
+            <label for="garri-mobile-amount">Amount (In Bags):</label>
+            <input type="number" name="" id="garri-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Yam Div -->
+          <div class="food-slab">
+            <img src="./images/04yam.jpg" alt="yam image" />
+            <h2>Yam</h2>
+            <label for="yam-mobile-amount">Amount (In Tubers):</label>
+            <input type="number" name="" id="yam-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Potato Div -->
+          <div class="food-slab">
+            <img src="./images/05potato.jpg" alt="potato image" />
+            <h2>Potato</h2>
+            <label for="potato-mobile-amount">Amount (In Bags):</label>
+            <input type="number" name="" id="potato-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Fish Div -->
+          <div class="food-slab">
+            <img src="./images/06fish.jpg" alt="fish image" />
+            <h2>Fish</h2>
+            <label for="fish-mobile-amount">Amount (In Numbers):</label>
+            <input type="number" name="" id="fish-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Meat Div -->
+          <div class="food-slab">
+            <img src="./images/07meat.jpg" alt="meat image" />
+            <h2>Meat</h2>
+            <label for="meat-mobile-amount">Amount (In Pieces):</label>
+            <input type="number" name="" id="meat-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Onion Div -->
+          <div class="food-slab">
+            <img src="./images/08onion.jpg" alt="onion image" />
+            <h2>Onion</h2>
+            <label for="onion-mobile-amount">Amount (In Bags):</label>
+            <input type="number" name="" id="onion-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Groundnut Oil Div -->
+          <div class="food-slab">
+            <img src="./images/09groundnut_oil.jpg" alt="grdnut image" />
+            <h2>Groundnut Oil</h2>
+            <label for="grdnut-mobile-amount">Amount (In Bottles):</label>
+            <input type="number" name="" id="grdnut-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Palm Oil Div -->
+          <div class="food-slab">
+            <img src="./images/10palm_oil.jpeg" alt="palm oil image" />
+            <h2>Palm Oil</h2>
+            <label for="palm-mobile-amount">Amount (In Bottles):</label>
+            <input type="number" name="" id="palm-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Tomato Div -->
+          <div class="food-slab">
+            <img src="./images/11tomato.png" alt="tomato image" />
+            <h2>Tomato</h2>
+            <label for="tomato-mobile-amount">Amount (In Bags):</label>
+            <input type="number" name="" id="tomato-mobile-amount" />
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Pepper Div -->
+          <div class="food-slab">
+            <img src="./images/12pepper.jpg" alt="pepper image" />
+            <h2>Pepper</h2>
+            <label for="pepper-mobile-amount">Amount (In Bags):</label>
+            <input type="number" name="" id="pepper-mobile-amount" />
+          </div>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Footer Desktop View -->
+      <table class="footer-desktop">
+        <!-- Table Headers (Row One) -->
+        <tr>
+          <td><h3>H.I.S Computer Science and Engineering</h3></td>
+          <td><h3>Site Links</h3></td>
+          <td><h3>Other Links</h3></td>
+        </tr>
+        <!-- End of Table Headers (Row One) -->
+
+        <!-- Table Contents (Row Two) -->
+        <tr>
+          <!-- H.I.S History -->
+          <td class="table-words-one">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              repellendus ipsa, sed quis, illo laboriosam atque delectus
+              quibusdam architecto esse tenetur labore nam qui eos
+              necessitatibus culpa hic et! Fugit dolor, amet maxime rem modi
+              natus soluta vitae delectus deserunt.
+            </p>
+          </td>
+          <!-- End of H.I.S History -->
+
+          <!-- Internal Site Links -->
+          <td class="table-words-two">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./log_in.html">Log In</a>
+            <a href="./sign_up.html">Sign Up</a>
+          </td>
+          <!-- End of Internal Site Links -->
+
+          <!-- External Social Media Links -->
+          <td class="table-words-three">
+            <a href="#" target="_blank"
+              ><i class="fa fa-facebook-official search" aria-hidden="true"></i>
+              Facebook</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              LinkedIn</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a
+            >
+          </td>
+          <!-- End of External Social Media Links -->
+        </tr>
+        <!-- End of Table Contents (Row Two) -->
+      </table>
+      <!-- End of Footer Desktop View -->
+
+      <!-- Footer Mobile View -->
+      <div class="footer-mobile">
+        <!-- H.I.S History -->
+        <div class="footer-div">
+          <h3>H.I.S Computer Science and Engineering</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            repellendus ipsa, sed quis, illo laboriosam atque delectus quibusdam
+            architecto esse tenetur labore nam qui eos necessitatibus culpa hic
+            et! Fugit dolor, amet maxime rem modi natus soluta vitae delectus
+            deserunt.
+          </p>
+        </div>
+        <!-- End of H.I.S History -->
+
+        <br />
+
+        <!-- Internal Site Links -->
+        <div class="footer-div">
+          <h3>Site Links</h3>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./log_in.html">Log In</a>
+          <a href="./sign_up.html">Sign Up</a>
+        </div>
+        <!-- End of Internal Site Links -->
+
+        <br />
+
+        <!-- External Social Media Links -->
+        <div class="footer-div">
+          <h3>Other Links</h3>
+          <a href="#" target="_blank"
+            ><i class="fa fa-facebook-official search" aria-hidden="true"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa fa-whatsapp" aria-hidden="true"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </div>
+        <!-- End of External Social Media Links -->
+      </div>
+      <!-- End of Footer Mobile View -->
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavBar");
+        if (x.className === "navBar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navBar";
+        }
+      }
+    </script>
+    <!-- End of Javascript -->
+  </body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>IDP ~ Home</title>
+
+    <!-- Internal CSS -->
+    <style>
+      /* Image Word */
+      .image-div {
+        padding: 20px 70px;
+        text-align: left;
+        top: 230px;
+      }
+
+      .image-div .intro {
+        font-size: 120%;
+      }
+
+      .image-div h2 {
+        font-size: 200%;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .image-div {
+          padding: 20px 30px;
+          top: 90px;
+        }
+
+        .image-div .intro {
+          font-size: 90%;
+        }
+
+        .image-div h2 {
+          margin-top: 2.5%;
+        }
+      }
+      @media screen and (min-width: 700px) and (max-width: 1300px) {
+        .image-div .intro {
+          font-size: 100%;
+        }
+
+        .image-div h2 {
+          font-size: 170%;
+        }
+      }
+      @media screen and (min-width: 400px) and (max-width: 700px) {
+        .image-div .intro {
+          font-size: 100%;
+        }
+
+        .image-div h2 {
+          font-size: 130%;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .image-div .intro {
+          font-size: 90%;
+        }
+
+        .image-div h2 {
+          font-size: 110%;
+        }
+      }
+      /* End of Image Word */
+
+      /* Body One */
+      .body-one {
+        padding: 100px 70px;
+      }
+
+      .body-one h2 {
+        margin-bottom: 1.5%;
+      }
+
+      .body-one p {
+        margin-bottom: 1.5%;
+        width: 90%;
+      }
+
+      .body-one a {
+        text-decoration: none;
+        color: #ff0000;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .body-one p {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 400px) and (max-width: 1300px) {
+        .body-one {
+          padding: 50px 20px;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .body-one {
+          padding: 30px;
+        }
+      }
+      /* End of Body One */
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navBar" id="myNavBar">
+      <!-- Organization Name and Bar Slashes -->
+      <div class="header-word">
+        <!-- Organization Name/Logo -->
+        <h3>IDPS</h3>
+        <!-- End of Organization Name/Logo -->
+
+        <!-- Bar Slashes -->
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+        <!-- End of Bar Slashes -->
+      </div>
+      <!-- End of Organization Name and Bar Slahes -->
+
+      <!-- Navigation anchor tag Desktop -->
+      <ul class="ul-desktop">
+        <li><a class="header-anchor" href="./sign_up.html">Sign Up</a></li>
+        <li><a class="header-anchor" href="./log_in.html">Log In</a></li>
+        <li><a class="header-anchor" href="./about.html">About</a></li>
+        <li><a class="header-anchor" href="./index.html">Home</a></li>
+      </ul>
+      <!-- End of Navigation anchor tag Desktop -->
+
+      <!-- Navigation anchor tag Mobile -->
+      <ul class="ul-mobile">
+        <li><a class="header-anchor home" href="./index.html">Home</a></li>
+        <li><a class="header-anchor" href="./about.html">About</a></li>
+        <li><a class="header-anchor" href="./log_in.html">Log In</a></li>
+        <li><a class="header-anchor" href="./sign_up.html">Sign Up</a></li>
+      </ul>
+      <!-- End of Navigation anchor tag Mobile -->
+    </header>
+    <!-- End of Header -->
+
+    <!-- Background Image -->
+    <div>
+      <!-- The Image -->
+      <img
+        class="backgrd"
+        src="./images/background.jpg"
+        alt="Background Image"
+      />
+      <!-- End of the Image -->
+
+      <!-- Image Word -->
+      <div class="image-div">
+        <!-- Basic Introductions -->
+        <p class="intro">
+          H.I.S. Department of Computer Science and Engineering
+        </p>
+
+        <!-- What Should Attract People's Attention -->
+        <h2>INTERNALLY DISPLACED PERSONS</h2>
+
+        <!-- The Amout of Cash Owned -->
+        <p class="available">Available Amount:</p>
+        <div class="amount"># 0.00</div>
+      </div>
+      <!-- End of Image Word -->
+    </div>
+    <!-- End of Background Image -->
+
+    <!-- Body One -->
+    <div class="body-one">
+      <!-- Body One Title -->
+      <h2>About Us</h2>
+      <!-- Body One Words -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        distinctio sunt exercitationem provident tenetur. Omnis vel deserunt quo
+        deleniti ullam! Exercitationem molestias eaque voluptate voluptatibus
+        impedit similique quis magni quos adipisci eius hic facilis natus,
+        mollitia sint aliquam ex voluptas tempore ad pariatur aperiam qui sunt
+        maiores! Nemo, iure? Eveniet incidunt tempora debitis sequi est omnis
+        aspernatur illo velit fugiat quod dolore corrupti, animi dolor ea neque,
+        laboriosam, odio officiis facilis beatae molestias ratione culpa?
+        Officiis ipsam debitis eveniet soluta tempore ducimus aliquid quod vel.
+        Adipisci ad ea eligendi mollitia, veniam delectus at soluta in, illo
+        saepe dolor voluptates facere!
+      </p>
+      <!-- Body One External Link (It should to a google page or summ) -->
+      <a href="#" target="_blank"
+        >Learn More <i class="fa fa-angle-right" aria-hidden="true"></i
+      ></a>
+    </div>
+    <!-- End of Body One -->
+
+    <!-- Footer -->
+    <footer>
+      <!-- Footer Desktop View -->
+      <table class="footer-desktop">
+        <!-- Table Headers (Row One) -->
+        <tr>
+          <td><h3>H.I.S Computer Science and Engineering</h3></td>
+          <td><h3>Site Links</h3></td>
+          <td><h3>Other Links</h3></td>
+        </tr>
+        <!-- End of Table Headers (Row One) -->
+
+        <!-- Table Contents (Row Two) -->
+        <tr>
+          <!-- H.I.S History -->
+          <td class="table-words-one">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              repellendus ipsa, sed quis, illo laboriosam atque delectus
+              quibusdam architecto esse tenetur labore nam qui eos
+              necessitatibus culpa hic et! Fugit dolor, amet maxime rem modi
+              natus soluta vitae delectus deserunt.
+            </p>
+          </td>
+          <!-- End of H.I.S History -->
+
+          <!-- Internal Site Links -->
+          <td class="table-words-two">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./log_in.html">Log In</a>
+            <a href="./sign_up.html">Sign Up</a>
+          </td>
+          <!-- End of Internal Site Links -->
+
+          <!-- External Social Media Links -->
+          <td class="table-words-three">
+            <a href="#" target="_blank"
+              ><i class="fa fa-facebook-official search" aria-hidden="true"></i>
+              Facebook</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              LinkedIn</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a
+            >
+          </td>
+          <!-- End of External Social Media Links -->
+        </tr>
+        <!-- End of Table Contents (Row Two) -->
+      </table>
+      <!-- End of Footer Desktop View -->
+
+      <!-- Footer Mobile View -->
+      <div class="footer-mobile">
+        <!-- H.I.S History -->
+        <div class="footer-div">
+          <h3>H.I.S Computer Science and Engineering</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            repellendus ipsa, sed quis, illo laboriosam atque delectus quibusdam
+            architecto esse tenetur labore nam qui eos necessitatibus culpa hic
+            et! Fugit dolor, amet maxime rem modi natus soluta vitae delectus
+            deserunt.
+          </p>
+        </div>
+        <!-- End of H.I.S History -->
+
+        <br />
+
+        <!-- Internal Site Links -->
+        <div class="footer-div">
+          <h3>Site Links</h3>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./log_in.html">Log In</a>
+          <a href="./sign_up.html">Sign Up</a>
+        </div>
+        <!-- End of Internal Site Links -->
+
+        <br />
+
+        <!-- External Social Media Links -->
+        <div class="footer-div">
+          <h3>Other Links</h3>
+          <a href="#" target="_blank"
+            ><i class="fa fa-facebook-official search" aria-hidden="true"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa fa-whatsapp" aria-hidden="true"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </div>
+        <!-- End of External Social Media Links -->
+      </div>
+      <!-- End of Footer Mobile View -->
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Javascript -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavBar");
+        if (x.className === "navBar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navBar";
+        }
+      }
+    </script>
+    <!-- End of Javascript -->
+  </body>
+</html>

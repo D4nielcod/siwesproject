@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/sub_main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>IDP ~ Admin Log In</title>
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        background-color: #224957;
+      }
+
+      /* Header */
+      .navBar {
+        background-color: inherit;
+      }
+
+      .navBar .header-word h3 {
+        color: #fff;
+      }
+
+      .navBar ul li .header-anchor {
+        color: #fff;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .responsive {
+          background-color: #224957;
+          border: none;
+        }
+
+        .responsive .header-word h3 {
+          color: #fff;
+        }
+
+        .responsive .header-word .icon {
+          color: #fff;
+        }
+
+        .responsive .ul-mobile li a.header-anchor {
+          color: #fff;
+        }
+        .responsive .ul-mobile li a.header-anchor:hover {
+          color: #696969;
+        }
+      }
+      /* End of Header */
+
+      /* Container */
+      .container {
+        background-color: inherit;
+        border: 1px solid #d2d2d2;
+      }
+
+      .container h4 {
+        color: #d2d2d2;
+      }
+
+      .container p {
+        color: #d2d2d2;
+      }
+
+      .container input.username,
+      .container input.password {
+        background-color: inherit;
+        border: 1px solid;
+        color: #d2d2d2;
+      }
+
+      ::placeholder {
+        color: #d2d2d2;
+      }
+
+      .container input.checkbox {
+        color: #d2d2d2;
+      }
+
+      .container p.remember {
+        color: #d2d2d2;
+      }
+
+      .container a.forgot {
+        color: #d2d2d2;
+      }
+
+      .container form button {
+        background-color: inherit;
+        border: 1px solid;
+        color: #20df7f;
+      }
+
+      .container a.admin {
+        color: #20df7f;
+      }
+      /* End of Container */
+
+      /* Footer */
+      footer {
+        background-color: inherit;
+        border-top: 1px solid;
+        color: #d2d2d2;
+      }
+
+      footer table tr td a {
+        color: #d2d2d2;
+      }
+
+      footer table tr td a:hover {
+        color: #fff;
+      }
+      /* End of Footer */
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navBar" id="myNavBar">
+      <!-- Organization Name and Bar Slashes -->
+      <div class="header-word">
+        <!-- Organization Name/Logo -->
+        <h3>IDPS</h3>
+        <!-- End of Organization Name/Logo -->
+
+        <!-- Bar Slashes -->
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+        <!-- End of Bar Slashes -->
+      </div>
+      <!-- End of Organization Name and Bar Slahes -->
+
+      <!-- Navigation anchor tag Desktop -->
+      <ul class="ul-desktop">
+        <li><a class="header-anchor" href="./sign_up.html">Sign Up</a></li>
+        <li><a class="header-anchor" href="./log_in.html">Log In</a></li>
+        <li><a class="header-anchor" href="./about.html">About</a></li>
+        <li><a class="header-anchor" href="./index.html">Home</a></li>
+      </ul>
+      <!-- End of Navigation anchor tag Desktop -->
+
+      <!-- Navigation anchor tag Mobile -->
+      <ul class="ul-mobile">
+        <li><a class="header-anchor home" href="./index.html">Home</a></li>
+        <li><a class="header-anchor" href="./about.html">About</a></li>
+        <li><a class="header-anchor" href="./log_in.html">Log In</a></li>
+        <li><a class="header-anchor" href="./sign_up.html">Sign Up</a></li>
+      </ul>
+      <!-- End of Navigation anchor tag Mobile -->
+    </header>
+    <!-- End of Header -->
+
+    <br />
+    <br />
+
+    <!-- Container -->
+    <div class="container">
+      <h4>ADMIN LOG IN</h4>
+      <p>Sign in and start managing your candidates</p>
+      <br />
+
+      <form class="">
+        <input
+          class="username"
+          type="text"
+          name=""
+          value=""
+          placeholder="Username"
+        />
+        <br />
+        <br />
+        <input
+          class="password"
+          type="password"
+          name=""
+          value=""
+          placeholder="Password"
+        />
+        <br />
+        <br />
+        <input class="checkbox" type="checkbox" name="" value="" />
+        <p class="remember">Remember password</p>
+        <a class="forgot" href="not_available.html">Forgot password?</a>
+        <br />
+        <br />
+        <button type="submit">Login</button>
+      </form>
+      <br />
+      <a class="admin" href="./log_in.html">Not an Admin? Login</a>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- Footer -->
+    <footer>
+      <!-- Footer Desktop View -->
+      <table class="footer-desktop">
+        <!-- Table Headers (Row One) -->
+        <tr>
+          <td><h3>H.I.S Computer Science and Engineering</h3></td>
+          <td><h3>Site Links</h3></td>
+          <td><h3>Other Links</h3></td>
+        </tr>
+        <!-- End of Table Headers (Row One) -->
+
+        <!-- Table Contents (Row Two) -->
+        <tr>
+          <!-- H.I.S History -->
+          <td class="table-words-one">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              repellendus ipsa, sed quis, illo laboriosam atque delectus
+              quibusdam architecto esse tenetur labore nam qui eos
+              necessitatibus culpa hic et! Fugit dolor, amet maxime rem modi
+              natus soluta vitae delectus deserunt.
+            </p>
+          </td>
+          <!-- End of H.I.S History -->
+
+          <!-- Internal Site Links -->
+          <td class="table-words-two">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./log_in.html">Log In</a>
+            <a href="./sign_up.html">Sign Up</a>
+          </td>
+          <!-- End of Internal Site Links -->
+
+          <!-- External Social Media Links -->
+          <td class="table-words-three">
+            <a href="#" target="_blank"
+              ><i class="fa fa-facebook-official search" aria-hidden="true"></i>
+              Facebook</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              LinkedIn</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a
+            >
+          </td>
+          <!-- End of External Social Media Links -->
+        </tr>
+        <!-- End of Table Contents (Row Two) -->
+      </table>
+      <!-- End of Footer Desktop View -->
+
+      <!-- Footer Mobile View -->
+      <div class="footer-mobile">
+        <!-- H.I.S History -->
+        <div class="footer-div">
+          <h3>H.I.S Computer Science and Engineering</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            repellendus ipsa, sed quis, illo laboriosam atque delectus quibusdam
+            architecto esse tenetur labore nam qui eos necessitatibus culpa hic
+            et! Fugit dolor, amet maxime rem modi natus soluta vitae delectus
+            deserunt.
+          </p>
+        </div>
+        <!-- End of H.I.S History -->
+
+        <br />
+
+        <!-- Internal Site Links -->
+        <div class="footer-div">
+          <h3>Site Links</h3>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./log_in.html">Log In</a>
+          <a href="./sign_up.html">Sign Up</a>
+        </div>
+        <!-- End of Internal Site Links -->
+
+        <br />
+
+        <!-- External Social Media Links -->
+        <div class="footer-div">
+          <h3>Other Links</h3>
+          <a href="#" target="_blank"
+            ><i class="fa fa-facebook-official search" aria-hidden="true"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa fa-whatsapp" aria-hidden="true"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </div>
+        <!-- End of External Social Media Links -->
+      </div>
+      <!-- End of Footer Mobile View -->
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Javascript -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavBar");
+        if (x.className === "navBar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navBar";
+        }
+      }
+    </script>
+    <!-- End of Javascript -->
+  </body>
+</html>
